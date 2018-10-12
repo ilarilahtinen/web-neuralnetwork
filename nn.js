@@ -8,13 +8,12 @@ class neuralNet{
     this.inTohid.randomize()
     this.hidToout.randomize()
   }
-  
+
   predict(input){
     let inp=Matrix.arrayToMatrix(input);
     let mid=Matrix.mult(inp, this.inTohid);
-    console.log(mid.toArr());
     let end=Matrix.mult(mid,this.hidToout)
-    console.log(end.toArr())
+    return end.toArr()
   }
 
   draw(ctx){

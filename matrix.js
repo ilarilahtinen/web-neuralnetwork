@@ -51,7 +51,7 @@ class Matrix{
   }
   static mult(a,b){
      if(a.cols!=b.rows){
-       console.log("Ei nyt taas ihan mennyt, koitapa uusiks toimivilla");
+       console.log("Your matrices are not right sized to be multiplied");
        return
      }
     let result=new Matrix(a.rows,b.cols)
